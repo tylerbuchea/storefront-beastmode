@@ -1,0 +1,135 @@
+/*
+Theme Name: Storefront Beastmode
+Theme URI: http://tylerbuchea.com/projects/storefront-beast
+Description: My first child theme, based on Storefront
+Author: Tyler Buchea
+Author URI: http://tylerbuchea.com
+Template: storefront
+Version: 1.0.0
+Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready, responsive-layout, infinite-scroll, post-slider, design, food, journal, magazine, news, photography, portfolio, clean, contemporary, dark, elegant, modern, professional, sophisticated
+Text Domain: storefront-beast
+*/
+
+@import url("./styles/shop.css");
+@import url("./styles/cart.css");
+@import url("./styles/news.css");
+@import url("./styles/about.css");
+@import url("./styles/contact.css");
+@import url("./styles/account.css");
+
+/**
+ * Header
+ **/
+
+/* adjusts logo position in header */
+#masthead {
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+
+/* puts menu and logo on same line */
+#masthead .col-full {
+	display: flex !important;
+}
+
+/* seperates menu and logo on smaller screens */
+@media (max-width: 950px) {
+  #masthead .col-full {
+    display: block !important;
+  }
+}
+
+/* seperates main header from content page */
+.site-header {
+	margin-bottom: 2.236em !important;
+}
+
+/* hides secondary navigation */
+.secondary-navigation {
+	display: none;
+}
+
+/* resize logo to fit nicely in header */
+.site-logo {
+	width: 150px;
+}
+
+/* removes ugly outline from header links */
+.menu-item a, .site-header-cart a {
+	outline: 0 !important;
+}
+
+/* adds nice underline to header links instead of ugly outline */
+.menu-item a:hover {
+	text-decoration: underline;
+}
+
+/* remove underline from header links on focus to show action */
+.menu-item a:focus {
+	text-decoration: none;
+}
+
+/**
+ * Content
+ **/
+
+/* add this class to images in WP blog posts for a nice border */
+.img-border {
+	border: 4px solid #666;
+	padding: 5px;
+}
+
+/* hide aside content */
+#secondary {
+  display: none;
+}
+
+/* make main content full-width */
+#primary {
+  width: 100%;
+  padding: 0;
+}
+
+.woocommerce-message {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  z-index: 5;
+  opacity: 0.9;
+  margin-bottom: 0 !important;
+  text-align: right;
+}
+
+/* hide breadcrumb nav */
+.woocommerce-breadcrumb {
+	display: none;
+}
+
+/* removes page title from shop page */
+.site-main .page-title {
+	display: none;
+}
+
+/* removes hr below page title */
+.hentry .entry-header {
+	border: none !important;
+	margin-bottom: 0 !important;
+}
+
+/* further formats page title */
+.entry-title, .page-title {
+	border: none !important;
+	text-align: left !important;
+	color: #ef5a31 !important;
+}
+
+/* controls product search input */
+.widget_product_search {
+	/*margin: 0;*/
+}
+
+/* hide woocommerce plug in footer */
+.site-info a {
+	display: none;
+}

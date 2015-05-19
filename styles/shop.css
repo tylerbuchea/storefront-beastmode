@@ -1,0 +1,93 @@
+/**
+ * Header
+ **/
+
+/* hides ugly header search box */
+.site-search {
+	display: none;
+}
+
+/**
+ * Content
+ **/
+
+/* styles the select input for ordering products */
+.orderby {
+	border: 1px solid black;
+  background: #ef5a31;
+  color: #fff;
+  outline: none;
+  height: 30px;
+  font-size: 1.1em;
+  width: auto !important;
+}
+
+/* styles product widgets */
+.home .product {
+	background: #fff;
+	border: 1px solid #e4e4e2;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  padding: 10px;
+}
+
+/* changes product price labels to a green color */
+.amount {
+	color: #27ae60; !important;
+}
+
+/* styles product button */
+.product .button {
+  background: #27ae60;
+}
+
+.add_to_cart_button, .added_to_cart {
+	line-height: 2.4 !important;
+	width: 100% !important;
+}
+
+/* hover class for products */
+.home .product:hover {
+	border-color: #cacaca;
+	border-bottom-color: #dadada;
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+	transition: all 0.2s ease-out;
+}
+
+/* removes ugly outline on focus */
+.home .product a:focus {
+	outline: 0;
+}
+
+/* full widths the blockquote below the product search input */
+.home blockquote {
+	margin: 0 !important;
+}
+
+/*.search-field {
+	border-radius: 3px !important;
+  max-width: 400px;
+  height: 50px;
+  font-size: 1.2rem;
+}
+
+.search-field:before, .screen-reader-text:before {
+  content: "\f002";
+  font-family: "FontAwesome";
+  position: absolute;
+  top: .618em;
+  left: 1em;
+  line-height: 1;
+}
+
+.woocommerce-product-search {
+	text-align: center;
+}
+
+.woocommerce-product-search:before {
+	position: relative !important;
+	font-size: 1.2rem;
+	top: 0 !important;
+	left: 2em !important;
+	content: '' !important;
+}*/
